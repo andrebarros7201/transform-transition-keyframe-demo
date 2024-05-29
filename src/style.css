@@ -24,7 +24,6 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid midnightblue;
     border-radius: 1rem;
     padding: 2rem;
     gap: 1rem;
@@ -46,13 +45,17 @@ nav{
 }
 
 #content > div{
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    border: 2px solid midnightblue;
     width: 100%;
+}
+
+#content > div:not(:first-child){
+    border-top: 2px solid black;
 }
 
 /* Demo squares*/
@@ -82,4 +85,12 @@ p{
 
 .scaleY:hover{
     transform: scaleY(1.2);
+}
+
+.rotate:hover{
+    transform: rotate(45deg);
+}
+
+.skew:hover{
+    transform: skew(30deg, 20deg);
 }

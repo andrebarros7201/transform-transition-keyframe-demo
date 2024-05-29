@@ -61,7 +61,6 @@ const scaleX = () => {
 
   contentDiv.appendChild(div);
 };
-
 const scaleY = () => {
   const contentDiv = document.querySelector("#content");
 
@@ -83,6 +82,45 @@ const scaleY = () => {
 
   contentDiv.appendChild(div);
 };
+const rotate = () => {
+  const contentDiv = document.querySelector("#content");
+
+  const div = document.createElement("div");
+  const title = document.createElement("h2");
+  title.textContent = "Rotate";
+
+  const paragraph = document.createElement("p");
+  paragraph.textContent = `Rotates the element around a specific point.`;
+
+  const square = document.createElement("div");
+  square.classList.add("rotate");
+
+  div.appendChild(title);
+  div.appendChild(paragraph);
+  div.appendChild(square);
+
+  contentDiv.appendChild(div);
+};
+
+const skew = () => {
+  const contentDiv = document.querySelector("#content");
+
+  const div = document.createElement("div");
+  const title = document.createElement("h2");
+  title.textContent = "Skew";
+
+  const paragraph = document.createElement("p");
+  paragraph.textContent = `Skews the element along the X and/or Y axis.`;
+
+  const square = document.createElement("div");
+  square.classList.add("skew");
+
+  div.appendChild(title);
+  div.appendChild(paragraph);
+  div.appendChild(square);
+
+  contentDiv.appendChild(div);
+};
 const transformAll = () => {
   const contentDiv = document.querySelector("#content");
 
@@ -93,6 +131,8 @@ const transformAll = () => {
   translateY();
   scaleX();
   scaleY();
+  rotate();
+  skew();
 };
 
 export { transformAll };
