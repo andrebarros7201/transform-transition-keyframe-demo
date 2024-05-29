@@ -30,5 +30,35 @@ nav{
 }
 
 #transition,#transform,#keyframe{
-    padding: 1rem 0.5rem;
+    background-color: dodgerblue;
+    color:white;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#transition:hover,#transform:hover,#keyframe:hover{
+    background-color: blue;
+}
+
+#content > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid midnightblue;
+}
+
+#content > div > div{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 0.5rem;
+    background-color: darkred;
+}
+
+.translateX:hover{
+    transform: translateX(1rem);
 }
