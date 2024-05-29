@@ -52,8 +52,10 @@ nav{
     align-items: center;
     gap: 1rem;
     border: 2px solid midnightblue;
+    width: 100%;
 }
 
+/* Demo squares*/
 #content > div > div{
     height: 7rem;
     width: 7rem;
@@ -72,4 +74,12 @@ p{
 
 .translateY:hover{
     transform: translateY(1rem);
+}
+
+.scaleX:hover{
+    transform: scaleX(1.2);
+}
+
+.scaleY:hover{
+    transform: scaleY(1.2);
 }
