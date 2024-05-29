@@ -1,8 +1,5 @@
-const translate = () => {
+const translateX = () => {
   const contentDiv = document.querySelector("#content");
-  while (contentDiv.firstChild) {
-    contentDiv.removeChild(contentDiv.firstChild);
-  }
 
   const div = document.createElement("div");
   const title = document.createElement("h2");
@@ -22,9 +19,35 @@ const translate = () => {
 
   contentDiv.appendChild(div);
 };
+const translateY = () => {
+  const contentDiv = document.querySelector("#content");
 
+  const div = document.createElement("div");
+  const title = document.createElement("h2");
+  title.textContent = "TranslateY";
+
+  const paragraph = document.createElement("p");
+  paragraph.textContent = `Moves the element from its current position.
+  Positive value goes to down.
+  Negative value goes to up.`;
+
+  const square = document.createElement("div");
+  square.classList.add("translateY");
+
+  div.appendChild(title);
+  div.appendChild(paragraph);
+  div.appendChild(square);
+
+  contentDiv.appendChild(div);
+};
 const transformAll = () => {
-  translate();
+  const contentDiv = document.querySelector("#content");
+
+  while (contentDiv.firstChild) {
+    contentDiv.removeChild(contentDiv.firstChild);
+  }
+  translateX();
+  translateY();
 };
 
 export { transformAll };

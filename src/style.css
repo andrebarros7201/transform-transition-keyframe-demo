@@ -27,6 +27,8 @@ nav{
     border: 2px solid midnightblue;
     border-radius: 1rem;
     padding: 2rem;
+    gap: 1rem;
+    width: max(500px, 100%);
 }
 
 #transition,#transform,#keyframe{
@@ -59,6 +61,15 @@ nav{
     background-color: darkred;
 }
 
+p{
+    text-align: center;
+    text-wrap: stable;
+}
+
 .translateX:hover{
     transform: translateX(1rem);
+}
+
+.translateY:hover{
+    transform: translateY(1rem);
 }
